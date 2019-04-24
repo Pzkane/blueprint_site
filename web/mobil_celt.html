@@ -3,21 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>blueprint_site</title>
-	<link rel="stylesheet" href="..styles/index.view.css">
-	<script language="javascript" src="..javascript/javascript.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../styles/view.css">
 	<link rel="stylesheet" href="../styles/all_celt.view.css">
+	<script language="javascript" src="../javascript/javascript.js"></script>
+	<script language="javascript" src="../javascript/responsive_menu.js"></script>
 </head>
 <body>
 	<div class="main"> <!-- main block -->
-		<div> <!-- menu -->
+		<div class="topnav" id="myTopnav"> <!-- menu -->
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="web/atb_celt.html">Atbalsta celtnis</a></li>
-				<li><a href="web/piek_celt.html">Piekaramais celtnis</a></li>
-				<li><a href="web/kons_celt.html">Konsoles celtnis</a></li>
-				<li><a href="web/mobil_celt.html">Mobilais celtnis</a></li>
-				<li><a href="web/kontakti.html.html">Kontakti</a></li>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="atb_celt.html">Atbalsta celtnis</a></li>
+				<li><a href="piek_celt.html">Piekaramais celtnis</a></li>
+				<li><a href="kons_celt.html">Konsoles celtnis</a></li>
+				<li><a href="mobil_celt.html">Mobilais celtnis</a></li>
+				<li><a href="kontakti.html">Kontakti</a></li>
 			</ul>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
 		</div>
 
 		<div> <!-- header -->
@@ -34,7 +39,11 @@
 		</div>
 
 		<div>
-			<img src="../images/mc.jpg" alt="Mobilais celtnis">
+			<img class="imgMedia" src="../images/mc.jpg" alt="Mobilais celtnis">
+		</div>
+
+		<div class="footer"> <!-- footer -->
+			LiftCranes &#169;All rights reserved.
 		</div>
 	</div>
 </body>

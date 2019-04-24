@@ -2,25 +2,31 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>blueprint-site</title>
-	<link rel="stylesheet" href="styles/index.view.css">
+	<title>blueprint_site</title>
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/view.css">
 	<script language="javascript" src="javascript/javascript.js"></script>
+	<script language="javascript" src="javascript/responsive_menu.js"></script>
 </head>
 <body>
 	<div class="main">
-		<div> <!-- menu -->
+		<div class="topnav" id="myTopnav"> <!-- menu -->
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="web/atb_celt.html">Atbalsta celtnis</a></li>
 				<li><a href="web/piek_celt.html">Piekaramais celtnis</a></li>
 				<li><a href="web/kons_celt.html">Konsoles celtnis</a></li>
 				<li><a href="web/mobil_celt.html">Mobilais celtnis</a></li>
-				<li><a href="web/kontakti.html.html">Kontakti</a></li>
+				<li><a href="web/kontakti.html">Kontakti</a></li>
 			</ul>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
 		</div>
 
-		<div> <!-- gallery -->
-			<img class="slide" src="images/celt.jpg" alt="crane1">
+		<div class="gallery"> <!-- gallery -->
+			<img id="stSlide" class="slide" src="images/celt.jpg" alt="crane1">
 			<img class="slide" src="images/celt1.jpg" alt="crane2">
 			<img class="slide" src="images/celt2.jpg" alt="crane3">
 			<img class="slide" src="images/celt3.jpg" alt="crane4">
@@ -32,21 +38,35 @@
 		<div>
 			<h1>Home</h1>
 		</div>
-
+		
 		<div>	<!-- text -->
-			<p></p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque urna nec diam auctor, in suscipit tortor rutrum. Mauris condimentum nisi lacinia nisl accumsan, ut fringilla leo fringilla. Nam vestibulum mauris eu metus commodo, blandit imperdiet nibh semper. Nulla dignissim, ex in gravida fermentum, tellus nibh dapibus purus, at interdum arcu dui accumsan dui. Aliquam mollis consectetur metus, ac pulvinar felis porttitor sed. Duis vestibulum in nisi vitae ultricies. Pellentesque id magna quam. Vestibulum a accumsan lacus. Aenean tortor est, pellentesque pharetra risus in, varius tincidunt ex. Proin consequat ex quis erat pharetra, vel pretium dui convallis. Sed vitae dolor in turpis vulputate tristique. Curabitur convallis neque enim, ac blandit lacus rhoncus vitae. Sed vitae ullamcorper diam. Quisque bibendum vulputate erat quis suscipit. Quisque facilisis aliquam commodo.</p>
 		</div>
 
-		<div> <!-- media -->
-			
+		<div class="video"> <!-- media -->
+			<iframe width="400" height="300"
+			src="https://www.youtube.com/embed/Fu4yKv4meX4">
+			</iframe>
 		</div>
 
-		<div> <!-- photos_link -->
-			
+		<div class="text">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque urna nec diam auctor, in suscipit tortor rutrum. Mauris condimentum nisi lacinia nisl accumsan, ut fringilla leo fringilla. Nam vestibulum mauris eu metus commodo, blandit imperdiet nibh semper. Nulla dignissim, ex in gravida fermentum, tellus nibh dapibus purus, at interdum arcu dui accumsan dui.</p>
 		</div>
 
-		<div> <!-- footer -->
-			
+		<div class="infoNod"> <!-- photos_link -->
+			<div class="links">
+				<p>Vairak informācijas par transportēšanu lasiet <a href="https://lv.wikipedia.org/wiki/Konteinerku%C4%A3is">Vikipēdija</a></p>
+			</div>
+			<div class="links">
+				<p>Vairak informācijas par papildus līdzekļiem lasiet <a href="https://lv.wikipedia.org/wiki/Gr%C4%ABdas_transportl%C4%ABdzeklis">Vikipēdija</a></p>
+			</div>
+			<div class="links">
+				<p>Vairak informācijas par līdzekļu parametriem lasiet <a href="http://www.cranesbank.lv/mobilie-celtni">šeit</a></p>
+			</div>
+		</div>
+
+		<div class="footer"> <!-- footer -->
+			LiftCranes &#169;All rights reserved.
 		</div>
 	</div>
 </body>

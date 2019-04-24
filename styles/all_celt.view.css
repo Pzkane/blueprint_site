@@ -7,25 +7,18 @@ img {
 	display: block;
 }
 
-div h1 {
-	text-align: left;
-	width: 100%;
-}
-
-.main {
-	position: absolute;
-	display: block;
-	left: 25%;
-	margin: 0;
-	padding: 0;
+.imgMedia {
+	position: relative;
 	text-align: center;
-	width: 50%;
+	width: 300px;
+	height: 250px;
+	float: left;
 }
 
 .media {
+	position: relative;
 	padding: 0;
 	margin: 0;
-	position: relative;
 	display: block;
 	width: 50%;
 	text-align: left;
