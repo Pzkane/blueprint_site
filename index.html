@@ -8,6 +8,13 @@
 	<link rel="stylesheet" href="styles/view.css">
 	<script language="javascript" src="javascript/javascript.js"></script>
 	<script language="javascript" src="javascript/responsive_menu.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<!-- Below we include the jQuery Library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="main">
@@ -26,11 +33,11 @@
 		</div>
 
 		<div class="gallery"> <!-- gallery -->
-			<img id="stSlide" class="slide" src="images/celt.jpg" alt="crane1">
-			<img class="slide" src="images/celt1.jpg" alt="crane2">
-			<img class="slide" src="images/celt2.jpg" alt="crane3">
-			<img class="slide" src="images/celt3.jpg" alt="crane4">
-			<img class="slide" src="images/team.png" alt="crane5">
+			<a data-fancybox="mygallery" href="images/celt.jpg"><img id="stSlide" class="slide" src="images/celt.jpg" alt="crane1"></a>
+			<a data-fancybox="mygallery" href="images/celt1.jpg"><img class="slide" src="images/celt1.jpg" alt="crane2"></a>
+			<a data-fancybox="mygallery" href="images/celt2.jpg"><img class="slide" src="images/celt2.jpg" alt="crane3"></a>
+			<a data-fancybox="mygallery" href="images/celt3.jpg"><img class="slide" src="images/celt3.jpg" alt="crane4"></a>
+			<a data-fancybox="mygallery" href="images/team.png"><img class="slide" src="images/team.png" alt="crane5"></a>
 			<button onclick="chngImg(-1)">&#10094;</button>
 			<button onclick="chngImg(+1)">&#10095;</button>
 		</div>
@@ -55,13 +62,13 @@
 
 		<div class="infoNod"> <!-- photos_link -->
 			<div class="links">
-				<p>Vairak informācijas par transportēšanu lasiet <a href="https://lv.wikipedia.org/wiki/Konteinerku%C4%A3is">Vikipēdija</a></p>
+				<p>Vairak informācijas par transportēšanu lasiet <a href="https://lv.wikipedia.org/wiki/Konteinerku%C4%A3is" target="_blank">Vikipēdija</a></p>
 			</div>
 			<div class="links">
-				<p>Vairak informācijas par papildus līdzekļiem lasiet <a href="https://lv.wikipedia.org/wiki/Gr%C4%ABdas_transportl%C4%ABdzeklis">Vikipēdija</a></p>
+				<p>Vairak informācijas par papildus līdzekļiem lasiet <a href="https://lv.wikipedia.org/wiki/Gr%C4%ABdas_transportl%C4%ABdzeklis" target="_blank">Vikipēdija</a></p>
 			</div>
 			<div class="links">
-				<p>Vairak informācijas par līdzekļu parametriem lasiet <a href="http://www.cranesbank.lv/mobilie-celtni">šeit</a></p>
+				<p>Vairak informācijas par līdzekļu parametriem lasiet <a href="http://www.cranesbank.lv/mobilie-celtni" target="_blank">šeit</a></p>
 			</div>
 		</div>
 
@@ -69,5 +76,10 @@
 			LiftCranes &#169;All rights reserved.
 		</div>
 	</div>
+	<script>
+        $(document).ready(function() {
+            $("[data-fancybox]").fancybox();
+        });
+	</script>
 </body>
 </html>
